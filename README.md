@@ -1,2 +1,4 @@
-# Swift-VIPER-Module-Template
-Xcode template for VIPER Architecture written in Swift 4
+To install the VIPER Xcode templates, run:
+
+> make install_viper_templates
+> make uninstall_viper_templates

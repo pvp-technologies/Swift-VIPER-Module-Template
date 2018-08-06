@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>MyModule</string>
+	<key>Description</key>
+	<string>This generates unit tests for your module. It consists of two test files for presenter and builder, and all needed mocks.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the module to create tests for</string>
+			<key>Identifier</key>
+			<string>moduleName</string>
+			<key>Name</key>
+			<string>Module Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___PresenterTests</string>
+			<key>Description</key>
+			<string>The presenter tests name</string>
+			<key>Identifier</key>
+			<string>presenterTestsName</string>
+			<key>Name</key>
+			<string>Presenter Tests Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_moduleName:identifier___Presenter</string>
+			<key>Description</key>
+			<string>The presenter mock</string>
+			<key>Identifier</key>
+			<string>presenterMockName</string>
+			<key>Name</key>
+			<string>Presenter Mock Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_moduleName:identifier___Interactor</string>
+			<key>Description</key>
+			<string>The interactor mock</string>
+			<key>Identifier</key>
+			<string>interactorMockName</string>
+			<key>Name</key>
+			<string>Interactor Mock Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_moduleName:identifier___Wireframe</string>
+			<key>Description</key>
+			<string>The wireframe mock</string>
+			<key>Identifier</key>
+			<string>wireframeMockName</string>
+			<key>Name</key>
+			<string>Wireframe Mock Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_moduleName:identifier___ViewController</string>
+			<key>Description</key>
+			<string>The view controller mock</string>
+			<key>Identifier</key>
+			<string>viewControllerMockName</string>
+			<key>Name</key>
+			<string>View Controller Mock Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Summary</key>
+	<string>This generates unit tests for your module.</string>
+</dict>
+</plist>
