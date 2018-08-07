@@ -58,41 +58,49 @@ Module generates next components:
 Wireframes inherit from the BaseWireframe. Presenters and Interactors do not inherit any class. Views most often inherit UIViewControllers. You need to generate BaseModule Template for the inherit just one time.
 
 
-## 1. Base classes and interfaces
+## 1. Base classes
 
 The module generator tool will generate five files - but in order for these to work you will need a couple of base protocols and classes. These are also available in the repo.
-Let's start by covering these base files: *WireframeInterface*, *BaseWireframe*, *ViewInterface*, *InteractorInterface*, *PresenterInterface*, *UIStoryboardExtension*:
 
-### WireframeInterface and BaseWireframe
 
-```swift
-
-```
-
-The Wireframe is used in 2 steps:
-
-1. Initialization using a *UIViewController* (see the *init* method). Since the Wireframe is in charge of performing the navigation it needs access to the actual *UIViewController* with which it will do so.
-2. Navigation to a screen (see the *pushWireframe*, *presentWireframe* and *setRootWireframe* methods).
-Those metods are defined on *UIViewController* and *UINavigationController* since those objects are responsible for performing the navigation.
-
-### PresenterInterface
+### BaseWireframe
 
 ```swift
+//MARK: - BaseWireframeProtocol
+protocol BaseWireframeProtocol: class {
+    
+    associatedtype T: UIViewController
+    associatedtype U
+    
+    var viewController: T? { get set }
+    static func createModule(with parameters: U) -> T
+    static func createModule() -> T
+}
 
+//MARK: - BaseWireframeProtocol extensions
+extension BaseWireframeProtocol {
+    
+    static func createModule(with parameters: U) -> T {
+        fatalError("Implementation pending...")
+    }
+    static func createModule() -> T {
+        fatalError("Implementation pending...")
+    }
+}
 ```
-The *PresenterInterface* offers only optional methods which are used for the Presenter to performa tasks based on View events. For methods you use without implementing them you'll get a nice big fatal error.
 
-### ViewInterface and InteractorInterface
+The BaseWireframe allows to create the different protocols that your different modules will inherit in the wireframe. It allows the creation of the module and reminding it if it is not implemented properly. And different methods of presentation of views
 
-```swift
 
-```
+### StyleProtocol & HelperDevice
 
-These two interfaces are initially empty. They exists just to make it simple to insert any and all functions needed in all views/interactors in you project. Both protocols need to be class bound because the Presenter will hold them via a weak reference.
+StyleProtocol file is use for ViewController for automatique style your view by devise or all.
+HelperDevice file is user for know the different device is an helper.
 
-Ok, let's get to the actual module. First we'll cover the files you get when creating a new module via the module generator.
+*You have the template without this helper, if want*
 
-## 2. What you get when generating a module
+## Generating module
+
 When running the module generator you will get five files. Say we wanted to create a Login module, we would get the following: *LoginInterfaces*, *LoginWireframe*, *LoginPresenter*, *LoginView* and *LoginInteractor*. Let's go over all five.
 
 ### Interfaces
