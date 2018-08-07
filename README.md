@@ -4,7 +4,7 @@
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![Version](https://img.shields.io/badge/version-popout-green.svg?longCache=true&style=1.0.0)
 	
-![iOS VIPER](/Images/ios_viper_logo.png "iOS VIPER")
+![iOS VIPER](https://raw.githubusercontent.com/codytwinton/SwiftyVIPER/1.2.3/Assets/SwiftyVIPER.png "iOS VIPER")
 
 
 # Installation instructions
@@ -28,29 +28,34 @@ You can find most common VIPER module use cases in it.
 
 How to organize all your code and not end up with a couple of <i>Massive View Controllers</i> with millions of lines of code?
 
-VIPER is an application of Clean Architecture to iOS apps. The word VIPER is a backronym for View, Interactor, Presenter, Entity, and Routing. Clean Architecture divides an app’s logical structure into distinct layers of responsibility. This makes it easier to isolate dependencies (e.g. your database) and to test the interactions at the boundaries between layers.
+VIPER is an acronym that represents an example of a design pattern that can be considered clean architecture. In essence, with clean architecture, you abstract your code into four layers: entities (models), use cases (business logic), controllers/gateways/presenters (handles UI logic), devices/UI/Web/DB/External interfaces (frameworks that could change).
 
-The main components of VIPER are as follows:
+VIPER stands for:
 
-* **View**: contains UI logic and knows how to layout and animate itself. It displays what it's _told_ by the Presenter and it _delegates_ user interaction actions to the Presenter. Ideally it contains no business logic, only view logic.
-* **Interactor**: used for fetching data when requested by the Presenter, regardless of where the data is coming from. Contains only business logic.
-* **Presenter**: prepares the content which it receives from the Interactor to be presented by the View. Contains business and view logic - basically it connects the two.
-* **Entity**: models which are handled by the Interactor. Contains only business logic, but primarily data, not rules.
-* **Router**: handles navigation logic. In our case we use components called Wireframes for this responsibility.
+* **V — View** (displays info to the user and detects user interaction)
+* **I — Interactor** (manipulates the entities/models by fetching data and storing data)
+* **P — Presenter** (without use of the UIKit, it contains the UI related business logic and prepares the data for presentation)
+* **E — Entity** (your model objects)
+* **R — Router** (aka wireframe, takes care of navigation in your module/application).
 
 ## Components
-Your entire app is made up of multiple modules which you organize in logical groups and use one storyboard for that group. In most cases the modules will represent screens and your module groups will represent user-stories, business-flows and so on.
 
-Module components:
+The template automatically generates the different files needed at the architechture of the VIPER. It also contains the generation of a style file for the ViewController, and the module model and a module-specific formatter
 
-* **View**
+Module generates next components:
+
+* * *Views*
+* * * **ViewController**
+* * * **ViewControllerStyle**
+* * *Models*
+* * * **Models**
+* * * **ModelsFormatter**
 * **Presenter**
 * **Interactor** (not mandatory)
 * **Wireframe**
 
-In some simpler cases you won't need an Interactor for a certain module, which is why this component is not mandatory. These are cases where you don't need to fetch any data, which is usually not common.
 
-Wireframes inherit from the BaseWireframe. Presenters and Interactors do not inherit any class. Views most often inherit UIViewControllers. All protocols should be located in one file called *Interfaces*. More on this later.
+Wireframes inherit from the BaseWireframe. Presenters and Interactors do not inherit any class. Views most often inherit UIViewControllers. You need to generate BaseModule Template for the inherit just one time.
 
 
 ## 1. Base classes and interfaces
