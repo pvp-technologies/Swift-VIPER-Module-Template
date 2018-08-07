@@ -14,7 +14,7 @@ import Foundation
 
 protocol ___VARIABLE_productName:identifier___ViewProtocol: class {
     
-    var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?  { get set }
+    var presenter: ___VARIABLE_productName:identifier___PresenterViewProtocol?  { get set }
 }
 
 // MARK: - Presenter view protocol
@@ -33,7 +33,7 @@ protocol ___VARIABLE_productName:identifier___PresenterInteractorProtocol: class
 
 protocol ___VARIABLE_productName:identifier___InteractorProtocol: class {
     
-    var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?  { get set }
+    var presenter: ___VARIABLE_productName:identifier___PresenterInteracorProtocol?  { get set }
 }
 
 // MARK: - Wireframe protocol
