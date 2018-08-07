@@ -2,7 +2,7 @@
 [![Swift](https://img.shields.io/badge/swift-4.0-4BC51D.svg?style=flat)](https://developer.apple.com/swift)
 ![XCode](https://img.shields.io/badge/xcode-9.2-brightgreen.svg)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
-![Version](https://img.shields.io/badge/version-popout-green.svg?longCache=true&style=1.0.0)
+![Version](https://img.shields.io/badge/version-1.0.0-green.svg?longCache=true&style=popout)
 	
 ![iOS VIPER](https://raw.githubusercontent.com/codytwinton/SwiftyVIPER/1.2.3/Assets/SwiftyVIPER.png "iOS VIPER")
 
