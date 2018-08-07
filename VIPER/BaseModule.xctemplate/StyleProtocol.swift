@@ -35,7 +35,7 @@ extension StyleProtocol {
     
     func initializeStyle() {
         initializeCommonStyle()
-        switch HelperDevice.model {
+        switch DeviceHelper.model {
         case .iPhone4:      initializeIPhone4Style()
         case .iPhone5:      initializeIPhone5Style()
         case .iPhone6:      initializeIPhone6Style()

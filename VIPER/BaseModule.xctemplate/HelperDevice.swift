@@ -12,7 +12,7 @@ import UIKit
 
 // MARK: - DeviceHelper
 
-public enum HelperDevice {
+public enum DeviceHelper {
     
     /// The screen sizes for all available iPhone and iPad's
     ///
