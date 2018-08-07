@@ -165,4 +165,4 @@ Feedback and code contributions are very much welcome. Just make a pull request 
 
 ## Credits
 
-Maintained and sponsored by
+Maintained and sponsored by https://www.openfleet.com/ & https://www.koolicar.com/
