@@ -14,28 +14,15 @@ import XCTest
 
 final class Mock___VARIABLE_moduleName___Presenter {
 
-    // MARK: ___VARIABLE_moduleName___PresenterViewProtocol test properties
-
-    
-    //var doSomethingCalled = false
-    
-    // MARK: ___VARIABLE_moduleName___InteractorProtocol test properties
+    // MARK: ___VARIABLE_moduleName___PresenterProtocol test properties
 
     //var doSomethingCalled = false
+
 }
 
 // MARK: - ___VARIABLE_moduleName___PresenterViewProtocol extensions
 
-extension Mock___VARIABLE_moduleName___PresenterViewProtocol: ___VARIABLE_moduleName___PresenterViewProtocol {
-    
-    //    func soSomething() {
-    //        doSomethingCalled = true
-    //    }
-}
-
-// MARK: - ___VARIABLE_moduleName___InteractorProtocol extensions
-
-extension Mock___VARIABLE_moduleName___PresenterInteractorProtocol: ___VARIABLE_moduleName___PresenterInteractorProtocol {
+extension Mock___VARIABLE_moduleName___PresenterProtocol: ___VARIABLE_moduleName___PresenterProtocol {
     
     //    func soSomething() {
     //        doSomethingCalled = true

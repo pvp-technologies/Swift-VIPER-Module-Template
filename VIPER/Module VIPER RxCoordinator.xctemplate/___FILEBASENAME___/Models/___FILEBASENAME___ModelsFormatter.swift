@@ -12,6 +12,6 @@ import UIKit
 
 // MARK: - Formatter extensions
 
-extension ___VARIABLE_moduleName___.Formatter {
+extension ___VARIABLE_MODULE1UPPER___.Formatter {
 
 }

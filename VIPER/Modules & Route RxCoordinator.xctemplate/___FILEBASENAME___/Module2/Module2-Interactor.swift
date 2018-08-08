@@ -10,16 +10,16 @@
 
 import Foundation
 
-// MARK: - ___VARIABLE_MODULE1UPPER___Interactor
+// MARK: - ___VARIABLE_MODULE2UPPER___Interactor
 
-final class ___VARIABLE_MODULE1UPPER___Interactor {
+final class ___VARIABLE_MODULE2UPPER___Interactor {
 
     // MARK: Properties
 
 }
 
-// MARK: - ___VARIABLE_MODULE1UPPER___PresenterInteractor Extensions
+// MARK: - ___VARIABLE_MODULE2UPPER___PresenterInteractor Extensions
 
-extension ___VARIABLE_MODULE1UPPER___Interactor: ___VARIABLE_MODULE1UPPER___InteractorProtocol {
+extension ___VARIABLE_MODULE2UPPER___Interactor: ___VARIABLE_MODULE2UPPER___InteractorProtocol {
 
 }

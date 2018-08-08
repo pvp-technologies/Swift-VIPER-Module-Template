@@ -15,7 +15,7 @@ import XCTest
 
 class Mock___VARIABLE_moduleName___ViewController {
 
-    // MARK: ___VARIABLE_moduleName___ViewProtocol test properties
+    // MARK: ___VARIABLE_moduleName___PresenterProtocol test properties
 
 //    var displaySomethingCalled = false
 
@@ -23,7 +23,7 @@ class Mock___VARIABLE_moduleName___ViewController {
 
 // MARK: - ___VARIABLE_moduleName___ViewProtocol extensions
 
-extension Mock___VARIABLE_moduleName___ViewController: ___VARIABLE_moduleName___ViewProtocol {
+extension Mock___VARIABLE_moduleName___ViewController: ___VARIABLE_moduleName___PresenterProtocol {
     
     //    func displaySomething() {
     //        displaySomethingCalled = true

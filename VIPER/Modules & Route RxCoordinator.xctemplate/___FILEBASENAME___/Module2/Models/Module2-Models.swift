@@ -11,9 +11,9 @@
 import Foundation
 import RxCoordinator
 
-// MARK: - ___VARIABLE_MODULE1UPPER___
+// MARK: - ___VARIABLE_MODULE2UPPER___
 
-enum ___VARIABLE_MODULE1UPPER___ {
+enum ___VARIABLE_MODULE2UPPER___ {
     
     // MARK: - Module Parameters
     

@@ -13,25 +13,25 @@ import RxCoordinator
 
 // MARK: - View protocol
 
-protocol ___VARIABLE_MODULE1UPPER___ViewProtocol: class {
+protocol ___VARIABLE_MODULE2UPPER___ViewProtocol: class {
 
 }
 
 // MARK: - Presenter protocol
 
-protocol ___VARIABLE_MODULE1UPPER___PresenterProtocol: class {
+protocol ___VARIABLE_MODULE2UPPER___PresenterProtocol: class {
 
 }
 
 // MARK: - Interactor protocol
 
-protocol ___VARIABLE_MODULE1UPPER___InteractorProtocol: class {
+protocol ___VARIABLE_MODULE2UPPER___InteractorProtocol: class {
     
 }
 
 // MARK: - Wireframe protocol
 
-protocol ___VARIABLE_MODULE1UPPER___WireframeProtocol: class {
+protocol ___VARIABLE_MODULE2UPPER___WireframeProtocol: class {
     // TODO: Give route name
     func navigate(to option: ___VARIABLE_ROUTE___Route)
 }

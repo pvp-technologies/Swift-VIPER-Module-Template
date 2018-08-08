@@ -10,15 +10,15 @@
 
 import UIKit
 
-// MARK: - ___VARIABLE_MODULE1UPPER___ViewController
+// MARK: - ___VARIABLE_MODULE2UPPER___ViewController
 
-final class ___VARIABLE_MODULE1UPPER___ViewController: UIViewController {
+final class ___VARIABLE_MODULE2UPPER___ViewController: UIViewController {
 
     // MARK: IBOutlets
 
     // MARK: Properties
 
-    var presenter: ___VARIABLE_MODULE1UPPER___PresenterProtocol?
+    var presenter: ___VARIABLE_MODULE2UPPER___PresenterProtocol?
     
     // MARK: Lifecycle
 
@@ -31,8 +31,8 @@ final class ___VARIABLE_MODULE1UPPER___ViewController: UIViewController {
 
 }
 
-// MARK: - ___VARIABLE_MODULE1UPPER___ViewProtocol extensions
+// MARK: - ___VARIABLE_MODULE2UPPER___ViewProtocol extensions
 
-extension ___VARIABLE_MODULE1UPPER___ViewController: ___VARIABLE_MODULE1UPPER___ViewProtocol {
+extension ___VARIABLE_MODULE2UPPER___ViewController: ___VARIABLE_MODULE2UPPER___ViewProtocol {
 
 }

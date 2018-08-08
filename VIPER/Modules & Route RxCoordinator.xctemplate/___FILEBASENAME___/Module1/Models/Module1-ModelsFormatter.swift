@@ -10,11 +10,8 @@
 
 import UIKit
 
-//MARK: - RouteParametersProtocol
+// MARK: - Formatter extensions
 
-protocol RouteParametersProtocol: class {
-    
-    associatedtype R: Route
-    
-    var coordinator: AnyCoordinator<R> { get set }
+extension ___VARIABLE_MODULE1UPPER___.Formatter {
+
 }
