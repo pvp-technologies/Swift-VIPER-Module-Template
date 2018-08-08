@@ -15,8 +15,6 @@ import Foundation
 final class ___VARIABLE_moduleName___Interactor {
 
     // MARK: Properties
-    
-    weak var presenter: ___VARIABLE_moduleName___PresenterInteractorProtocol?
 
 }
 

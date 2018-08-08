@@ -8,7 +8,7 @@
         <!-- ___FILEBASENAMEASIDENTIFIER___ View Controller-->
         <scene sceneID="i6D-mD-LYe">
             <objects>
-                <viewController storyboardIdentifier="___VARIABLE_moduleName___ViewController" id="6yN-xH-QIN" customClass="___VARIABLE_moduleName___ViewController" customModule="Generic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="___VARIABLE_moduleName___ViewController" id="6yN-xH-QIN" customClass="___VARIABLE_moduleName___ViewController" customModule="target" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jox-vg-Rqg"/>
                         <viewControllerLayoutGuide type="bottom" id="jh4-md-DI3"/>

@@ -14,6 +14,12 @@ import Foundation
 
 enum ___VARIABLE_moduleName___ {
     
+    // MARK: - Module Parameters
+    
+    struct Parameters {
+        
+    }
+    
     // MARK: - Models Formatter
     
     enum Formatter {

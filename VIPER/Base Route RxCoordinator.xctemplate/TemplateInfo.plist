@@ -22,9 +22,37 @@
 			<key>Description</key>
 			<string>The name of the module to create</string>
 			<key>Identifier</key>
+			<string>moduleCreate</string>
+			<key>Name</key>
+			<string>Module Create:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>First ViewController module</string>
+			<key>Identifier</key>
 			<string>moduleName</string>
 			<key>Name</key>
 			<string>Module Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>First ViewController module</string>
+			<key>Identifier</key>
+			<string>moduleName2</string>
+			<key>Name</key>
+			<string>Module Name2:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>

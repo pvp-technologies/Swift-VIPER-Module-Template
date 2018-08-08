@@ -26,7 +26,7 @@ protocol BaseWireframeProtocol: class {
 
 extension BaseWireframeProtocol {
     
-    static func createModule(with parameters: U) -> T {
+    static func createModule(with parameters: Any) -> T {
         fatalError("Implementation pending...")
     }
     static func createModule() -> T {

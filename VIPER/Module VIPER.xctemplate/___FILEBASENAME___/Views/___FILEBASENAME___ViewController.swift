@@ -18,7 +18,7 @@ final class ___VARIABLE_moduleName___ViewController: UIViewController {
 
     // MARK: - Properties
 
-    var presenter: ___VARIABLE_moduleName___PresenterViewProtocol?
+    var presenter: ___VARIABLE_moduleName___PresenterProtocol?
     
     // MARK: - Lifecycle
 

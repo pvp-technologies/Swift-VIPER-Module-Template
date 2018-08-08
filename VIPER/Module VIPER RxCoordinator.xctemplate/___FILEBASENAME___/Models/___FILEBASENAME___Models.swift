@@ -9,15 +9,17 @@
 //
 
 import Foundation
+import RxCoordinator
 
 // MARK: - ___VARIABLE_moduleName___
 
 enum ___VARIABLE_moduleName___ {
     
-    // MARK: - Module parameters
+    // MARK: - Module Parameters
     
     struct Parameters {
-        
+        // TODO: Give route name
+        var coordinator: AnyCoordinator<<#RouteName#>>
     }
     
     // MARK: - Models Formatter

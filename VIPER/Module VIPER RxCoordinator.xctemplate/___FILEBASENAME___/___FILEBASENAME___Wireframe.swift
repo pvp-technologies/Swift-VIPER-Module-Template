@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import RxCoordinator
 
 // MARK: - ___VARIABLE_moduleName___Wireframe
 
@@ -16,7 +17,8 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframeProtocol {
 
     // MARK: Properties
 
-    weak var viewController: ___VARIABLE_moduleName___ViewController?
+    // TODO: Give route name
+    private let coordinator: AnyCoordinator<<#RouteName#>>
 
     // MARK: Create module
     
@@ -26,9 +28,9 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframeProtocol {
         let interactor = ___VARIABLE_moduleName___Interactor()
         let wireframe = ___VARIABLE_moduleName___Wireframe()
         let presenter = ___VARIABLE_moduleName___Presenter(interface: view, interactor: interactor, wireframe: wireframe, parameters: parameters)
+        
         view.presenter = presenter
-        interactor.presenter = presenter
-        wireframe.viewController = view
+        coordinator = parameters.coordinator
         
         return view
     }
@@ -38,6 +40,8 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframeProtocol {
 
 extension ___VARIABLE_moduleName___Wireframe: ___VARIABLE_moduleName___WireframeProtocol {
     
-    func navigate(to option: ___VARIABLE_moduleName___.NavigationOption) {
+    // TODO: Name Route
+    func navigate(to option: AnyCoordinator<<#RouteName#>>) {
+        self.coordinator.transition(to: option).presentation
     }
 }

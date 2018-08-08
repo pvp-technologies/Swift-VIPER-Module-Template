@@ -31,8 +31,8 @@ protocol ___VARIABLE_productName___InteractorProtocol: class {
 // MARK: - Wireframe protocol
 
 protocol ___VARIABLE_productName___WireframeProtocol: class {
-
-    func navigate(to option: ___VARIABLE_moduleName___.NavigationOption)
+    // TODO: Give route name
+    func navigate(to option: AnyCoordinator<<#RouteName#>>)
 }
 
 

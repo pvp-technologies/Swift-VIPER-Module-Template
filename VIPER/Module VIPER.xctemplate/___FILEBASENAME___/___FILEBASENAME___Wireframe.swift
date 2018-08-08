@@ -20,12 +20,27 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframeProtocol {
 
     // MARK: Create module
     
+    static func createModule(with parameters: ___VARIABLE_moduleName___.Parameters) -> ___VARIABLE_moduleName___ViewController {
+        
+        let view = StoryboardScene.___VARIABLE_moduleName___.___VARIABLE_moduleName___ViewController.instantiate()
+        let interactor = ___VARIABLE_moduleName___Interactor()
+        let wireframe = ___VARIABLE_moduleName___Wireframe()
+        let presenter = ___VARIABLE_moduleName___Presenter(interface: view, interactor: interactor, wireframe: wireframe, parameters: parameters)
+        
+        view.presenter = presenter
+        wireframe.viewController = view
+        
+        return view
+    }
+    
+    // TODO: Without params
+    /*
     static func createModule() -> ___VARIABLE_moduleName___ViewController {
         
         let view = StoryboardScene.___VARIABLE_moduleName___.___VARIABLE_moduleName___ViewController.instantiate()
         let interactor = ___VARIABLE_moduleName___Interactor()
         let wireframe = ___VARIABLE_moduleName___Wireframe()
-        let presenter = ___VARIABLE_moduleName___Presenter(interface: view, interactor: interactor, wireframe: wireframe)
+        let presenter = ___VARIABLE_moduleName___Presenter(view: view, interactor: interactor, wireframe: wireframe)
         
         view.presenter = presenter
         interactor.presenter = presenter
@@ -33,6 +48,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframeProtocol {
         
         return view
     }
+    */
 }
 
 // MARK: - ___VARIABLE_moduleName___WireframeProtocol implementation
