@@ -9,6 +9,7 @@
 //
 
 import Foundation
+import RxCoordinator
 
 // MARK: - View protocol
 
@@ -32,7 +33,7 @@ protocol ___VARIABLE_productName___InteractorProtocol: class {
 
 protocol ___VARIABLE_productName___WireframeProtocol: class {
     // TODO: Give route name
-    func navigate(to option: AnyCoordinator<<#RouteName#>>)
+    func navigate(to option: <#RouteName#>)
 }
 
 

@@ -18,8 +18,7 @@ enum ___VARIABLE_moduleName___ {
     // MARK: - Module Parameters
     
     struct Parameters {
-        // TODO: Give route name
-        var coordinator: AnyCoordinator<<#RouteName#>>
+
     }
     
     // MARK: - Models Formatter
@@ -32,7 +31,7 @@ enum ___VARIABLE_moduleName___ {
     
     enum Something {
         
-        struct viewModel {
+        struct ViewModel {
         }
         
         struct Request {

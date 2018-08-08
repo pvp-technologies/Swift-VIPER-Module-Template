@@ -14,20 +14,20 @@ import UIKit
 
 final class ___VARIABLE_moduleName___ViewController: UIViewController {
 
-    // MARK: - IBOutlets
+    // MARK: IBOutlets
 
-    // MARK: - Properties
+    // MARK: Properties
 
     var presenter: ___VARIABLE_moduleName___PresenterProtocol?
     
-    // MARK: - Lifecycle
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeStyle()
     }
 
-    // MARK: - IBActions
+    // MARK: IBActions
 
 }
 

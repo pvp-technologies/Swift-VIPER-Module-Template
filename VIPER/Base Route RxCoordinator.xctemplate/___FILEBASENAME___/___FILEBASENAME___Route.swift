@@ -17,7 +17,7 @@ enum ___VARIABLE_moduleName___Route: Route {
     case <#First module name#>
     case <#second module name#>
     
-    func prepareTransition(coordinator: AnyCoordinator<HomeRoute>) -> NavigationTransition {
+    func prepareTransition(coordinator: AnyCoordinator<___VARIABLE_moduleName___Route>) -> NavigationTransition {
         switch self {
         case .<#First module name#>:
             /*

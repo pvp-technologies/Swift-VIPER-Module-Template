@@ -18,7 +18,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframeProtocol {
     // MARK: Properties
 
     // TODO: Give route name
-    private let coordinator: AnyCoordinator<<#RouteName#>>
+    private weak var coordinator: AnyCoordinator<<#RouteName#>>
 
     // MARK: Create module
     
@@ -27,10 +27,10 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframeProtocol {
         let view = StoryboardScene.___VARIABLE_moduleName___.___VARIABLE_moduleName___ViewController.instantiate()
         let interactor = ___VARIABLE_moduleName___Interactor()
         let wireframe = ___VARIABLE_moduleName___Wireframe()
-        let presenter = ___VARIABLE_moduleName___Presenter(interface: view, interactor: interactor, wireframe: wireframe, parameters: parameters)
+        let presenter = ___VARIABLE_moduleName___Presenter(view: view, interactor: interactor, wireframe: wireframe, parameters: parameters)
         
         view.presenter = presenter
-        coordinator = parameters.coordinator
+        wireframe.coordinator = parameters.coordinator
         
         return view
     }
@@ -41,7 +41,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframeProtocol {
 extension ___VARIABLE_moduleName___Wireframe: ___VARIABLE_moduleName___WireframeProtocol {
     
     // TODO: Name Route
-    func navigate(to option: AnyCoordinator<<#RouteName#>>) {
+    func navigate(to option: <#RouteName#>) {
         self.coordinator.transition(to: option).presentation
     }
 }
