@@ -2,7 +2,7 @@
 [![Swift](https://img.shields.io/badge/swift-4.0-4BC51D.svg?style=flat)](https://developer.apple.com/swift)
 ![XCode](https://img.shields.io/badge/xcode-9.2-brightgreen.svg)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
-![Version](https://img.shields.io/badge/version-popout-green.svg?longCache=true&style=1.0.0)
+![Version](https://img.shields.io/badge/version-1.0.0-green.svg?longCache=true&style=popout)
 	
 ![iOS VIPER](https://raw.githubusercontent.com/codytwinton/SwiftyVIPER/1.2.3/Assets/SwiftyVIPER.png "iOS VIPER")
 
@@ -103,62 +103,55 @@ HelperDevice file is user for know the different device is an helper.
 
 When running the module generator you will get five files. Say we wanted to create a Login module, we would get the following: *LoginInterfaces*, *LoginWireframe*, *LoginPresenter*, *LoginView* and *LoginInteractor*. Let's go over all five.
 
-### Interfaces
+### View
 
 ```swift
 
 ```
-
-This interface file will provide you with a nice overview of your entire module at one place. Since most components communicate with each other via protocols we found very useful to put all of these protocols for one module in one place. That way you have a very clean overview of the entire behavior of the module.
-The *LoginNavigationOption* enum is used for all navigation actions which involve creating a new wireframe and navigating to it in which ever way possible. This will become clearer when we go over a concrete example.
-
-### Wireframe
+### ViewStyle
 
 ```swift
+
 ```
-
-If you've created a storyboard which contains a *LoginViewController*, all you need to do is enter the storyboard name (see *_storyboard* var) here and the code will compile. We've made the assumption that you use the class name for an identifier but you can of course change this at any point in the future.
-
 
 ### Presenter
 
 ```swift
 
 ```
-This is the skeleton of a Presenter which will get a lot more meat on it once you start implementing the business logic.
 
-### View
+### Models
 
 ```swift
 
 ```
-Like the Presenter above, this is only a skeleton which you will populate with IBOutlets, animations and so on.
 
+### ModelsFormatter
+
+```swift
+
+```
 ### Interactor
 
 ```swift
 
 ```
-When generated your Interactor is also a skeleton which you will in most cases use to perform fetching of data from remote API services, Database services, etc.
+
+### Wireframe
+
+```swift
+
+```
 
 ## How it's organized in Xcode
 
-Using this architecture impacted the way we organize our projects. In most cases we have four main subfolders in the project folder: Application, Common, Modules and Resources. Let's go over those a bit.
-
 ### Application
-Contains AppDelegate and any other app-wide components, initializers, appearance classes, managers and so on. Usually this folder contains only a few files.
 
 ### Common
-Used for all common utility and view components grouped in sub folders. Some common cases for these groups are _Analytics_, _Constants_, _Extensions_, _Protocols_, _Views_, _Networking_, etc. Also here is where we always have a _VIPER_ subfolder which contains the base VIPER protocols and classes.
 
 ### Resources
-This folder should contain image assets, fonts, audio and video files, and so on. We use one *.xcassets* for images and in that folder separate images into logical folders so we don't get a long list of files in one place.
 
 ### Modules
-As described earlier you can think of one VIPER module as one screen. In the _Modules_ folder we organize screens into logical groups which are basically user-stories. Each group is organized in a subfolder which contains one storyboard (containing all screens for that group) and multiple module subfolders.
-
-![iOS VIPER MODULES](/Images/ios_viper_modules.png "iOS VIPER MODULES")
-
 
 ## Useful links
 
@@ -172,4 +165,4 @@ Feedback and code contributions are very much welcome. Just make a pull request 
 
 ## Credits
 
-Maintained and sponsored by
+Maintained and sponsored by https://www.openfleet.com/ & https://www.koolicar.com/
