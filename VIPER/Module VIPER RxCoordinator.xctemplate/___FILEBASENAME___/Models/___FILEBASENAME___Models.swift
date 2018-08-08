@@ -27,12 +27,6 @@ enum ___VARIABLE_moduleName___ {
     enum Formatter {
         
     }
-    
-    // MARK: - NavigationOption
-    
-    enum NavigationOption {
-        
-    }
 
     // MARK: - Internal Models
     
