@@ -158,6 +158,8 @@ When running the module generator you will get five files. Say we wanted to crea
 
 ## Useful links
 
+* https://cheesecakelabs.com/blog/best-practices-viper-architecture/
+* https://theswiftdev.com/2018/03/12/the-ultimate-viper-architecture-tutorial/
 * https://techblog.badoo.com/blog/2016/03/21/ios-architecture-patterns/
 * https://www.objc.io/issues/13-architecture/viper/
 * https://swifting.io/blog/2016/03/07/8-viper-to-be-or-not-to-be/
