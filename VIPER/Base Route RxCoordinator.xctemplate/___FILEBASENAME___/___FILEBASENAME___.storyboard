@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+    </dependencies>
+    <scenes>
+        <!--___VARIABLE_MODULE1UPPER___-->
+        <scene sceneID="kiN-v9-mic">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="___VARIABLE_MODULE1UPPER___" storyboardName="___FILEBASENAME___" referencedIdentifier="___VARIABLE_MODULE1UPPER___" id="rpk-m0-XRE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XmV-Jj-5ab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="-94"/>
+        </scene>
+        <!--___VARIABLE_MODULE1UPPER___-->
+        <scene sceneID="RrD-pP-iqv">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="___VARIABLE_MODULE1UPPER___" storyboardName="___FILEBASENAME___" referencedIdentifier="___VARIABLE_MODULE1UPPER___" id="9o0-TF-1VH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMq-wV-Hxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="-94"/>
+        </scene>
+    </scenes>
+</document>
