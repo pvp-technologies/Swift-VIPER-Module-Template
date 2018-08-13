@@ -36,8 +36,5 @@ enum ___VARIABLE_MODULE1UPPER___ {
         
         struct Request {
         }
-        
-        struct Response {
-        }
     }
 }

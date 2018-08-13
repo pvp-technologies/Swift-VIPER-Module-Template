@@ -41,8 +41,5 @@ enum ___VARIABLE_moduleName___ {
         
         struct Request {
         }
-        
-        struct Response {
-        }
     }
 }
