@@ -22,7 +22,7 @@ final class ___VARIABLE_MODULE1UPPER___Wireframe: BaseWireframeProtocol {
 
     // MARK: Create module
     
-    static func createModule(with parameters: ___VARIABLE_MODULE1UPPER___.Parameters) -> ___VARIABLE_MODULE1UPPER___ViewController {
+    static func createModule(with parameters: ___VARIABLE_MODULE1UPPER___.Parameters, coordinator: AnyCoordinator<___VARIABLE_ROUTE___Route>) -> ___VARIABLE_MODULE1UPPER___ViewController {
         
         let view = StoryboardScene.___VARIABLE_MODULE1UPPER___.___VARIABLE_MODULE1___ViewController.instantiate()
         let interactor = ___VARIABLE_MODULE1UPPER___Interactor()
@@ -30,7 +30,7 @@ final class ___VARIABLE_MODULE1UPPER___Wireframe: BaseWireframeProtocol {
         let presenter = ___VARIABLE_MODULE1UPPER___Presenter(view: view, interactor: interactor, wireframe: wireframe, parameters: parameters)
         
         view.presenter = presenter
-        wireframe.coordinator = parameters.coordinator
+        wireframe.coordinator = coordinator
         
         return view
     }

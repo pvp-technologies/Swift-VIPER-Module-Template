@@ -36,51 +36,9 @@
 			<key>Description</key>
 			<string>The name of the first VIPER module to create ( first Upper case )</string>
 			<key>Identifier</key>
-			<string>MODULE1UPPER</string>
-			<key>Name</key>
-			<string>First ViewController name ( first  letter Upper case ) :</string>
-			<key>NotPersisted</key>
-			<true/>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>text</string>
-		</dict>
-		<dict>
-			<key>Description</key>
-			<string>The name of the first VIPER module to create ( lower case )</string>
-			<key>Identifier</key>
 			<string>MODULE1</string>
 			<key>Name</key>
-			<string>Enum for first ViewController name ( lower case ) :</string>
-			<key>NotPersisted</key>
-			<true/>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>text</string>
-		</dict>
-		<dict>
-			<key>Description</key>
-			<string>The name of the first VIPER module to create ( first  letter Upper case )</string>
-			<key>Identifier</key>
-			<string>MODULE2UPPER</string>
-			<key>Name</key>
-			<string>Second ViewController name ( first  letter Upper case ) :</string>
-			<key>NotPersisted</key>
-			<true/>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>text</string>
-		</dict>
-		<dict>
-			<key>Description</key>
-			<string>The name of the second VIPER module to create ( first lower case )</string>
-			<key>Identifier</key>
-			<string>MODULE2</string>
-			<key>Name</key>
-			<string>Enum for second ViewController name ( lower case ) :</string>
+			<string>Name Coordinator (sample: Exemple -&gt; ExempleCoordinator )</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>

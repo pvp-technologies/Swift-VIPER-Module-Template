@@ -32,7 +32,7 @@ protocol ___VARIABLE_MODULE1UPPER___InteractorProtocol: class {
 // MARK: - Wireframe protocol
 
 protocol ___VARIABLE_MODULE1UPPER___WireframeProtocol: class {
-    // TODO: Give route name
+
     func navigate(to option: ___VARIABLE_ROUTE___Route)
 }
 
